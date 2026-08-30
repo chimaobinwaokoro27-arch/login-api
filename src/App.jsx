@@ -1,8 +1,8 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import Login from "./pages/Login";
-import Profile from "./pages/Profile";
-import NotFound from "./pages/NotFound";
-import ProtectedRoute from "./components/ProtectedRoute";
+import Login from "./page/Login";
+import Profile from "./page/Profile";
+import NotFound from "./page/NOTfound";
+import ProtectedRoute from "./componenets/ProtectedRoute";
 
 function App() {
   return (

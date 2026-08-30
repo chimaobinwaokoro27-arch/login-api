@@ -31,12 +31,11 @@ function Profile() {
   return (
     <main className="min-h-screen bg-[#07101a] px-5 py-10 text-white">
 
-      {/* Background */}
       <div className="fixed inset-0 -z-0 bg-gradient-to-br from-[#062b69] via-[#07101a] to-[#02060a]" />
 
       <div className="relative z-10 mx-auto max-w-4xl">
 
-        {/* Header */}
+
         <header className="mb-8 flex items-center justify-between">
           <div>
             <p className="text-sm text-white/50">ACCOUNT</p>
@@ -53,14 +52,13 @@ function Profile() {
           </button>
         </header>
 
-        {/* Profile card */}
         <section className="overflow-hidden rounded-3xl border border-white/15 bg-white/10 shadow-2xl backdrop-blur-xl">
 
           <div className="h-32 bg-gradient-to-r from-blue-950 to-blue-700" />
 
           <div className="px-6 pb-8 sm:px-10">
 
-            {/* Avatar */}
+            
             <div className="-mt-16 mb-6">
               <img
                 src={user.image}
@@ -69,7 +67,7 @@ function Profile() {
               />
             </div>
 
-            {/* Name */}
+          
             <h2 className="text-3xl font-bold">
               {user.firstName} {user.lastName}
             </h2>
@@ -78,7 +76,7 @@ function Profile() {
               @{user.username}
             </p>
 
-            {/* Details */}
+         
             <div className="mt-8 grid gap-4 sm:grid-cols-2">
 
               <div className="rounded-2xl border border-white/10 bg-black/20 p-5">

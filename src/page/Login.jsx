@@ -134,7 +134,7 @@ function Login() {
   return (
     <main className="relative min-h-screen overflow-hidden bg-[#07101a] flex items-center justify-center px-5 py-10">
 
-      {/* Blue brick wall */}
+      
       <div className="absolute inset-x-0 bottom-0 h-[72%] overflow-hidden">
         <div className="absolute inset-0 bg-[#062b69]" />
 
@@ -161,19 +161,17 @@ function Login() {
         />
       </div>
 
-      {/* Warm light */}
+     
       <div className="absolute bottom-[43%] left-1/2 -translate-x-1/2">
         <div className="h-28 w-[430px] rounded-full bg-yellow-100/40 blur-3xl" />
       </div>
 
       <div className="absolute bottom-[48%] left-1/2 -translate-x-1/2 h-4 w-48 rounded-full bg-yellow-100 shadow-[0_0_60px_35px_rgba(255,225,160,0.45)]" />
 
-      {/* Login card */}
       <section className="relative z-10 w-full max-w-[500px]">
 
         <div className="rounded-3xl border border-white/20 bg-white/15 p-7 shadow-2xl backdrop-blur-xl sm:p-10">
 
-          {/* Heading */}
           <div className="mb-9 text-center">
             <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl">
               Login
@@ -186,7 +184,7 @@ function Login() {
 
           <form onSubmit={handleSubmit} className="space-y-5">
 
-            {/* Username */}
+
             <div className="relative">
               <input
                 type="text"
@@ -203,7 +201,7 @@ function Login() {
               </span>
             </div>
 
-            {/* Password */}
+           
             <div className="relative">
               <input
                 type="password"
@@ -220,14 +218,14 @@ function Login() {
               </span>
             </div>
 
-            {/* Error */}
+         
             {error && (
               <div className="rounded-xl border border-red-300/20 bg-red-500/15 px-4 py-3 text-center text-sm text-red-100">
                 {error}
               </div>
             )}
 
-            {/* Remember */}
+           
             <div className="flex items-center justify-between gap-3 px-2 text-sm text-white/90">
               <label className="flex cursor-pointer items-center gap-2">
                 <input
@@ -242,7 +240,7 @@ function Login() {
               </span>
             </div>
 
-            {/* Login button */}
+            
             <button
               type="submit"
               disabled={loading}
@@ -252,7 +250,6 @@ function Login() {
             </button>
           </form>
 
-          {/* Assignment doesn't require registration */}
           <p className="mt-7 text-center text-xs text-white/50">
             Secure access to your profile
           </p>
